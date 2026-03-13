@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#07070F">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView android:text="🎁 Rewards Store"
+            android:textColor="#FFFFFF" android:textSize="22sp" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+        <TextView android:id="@+id/tv_wallet_balance"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="🪙 0 Points" android:textColor="#FFD700"
+            android:textSize="28sp" android:textStyle="bold"
+            android:background="#1a1a2e" android:padding="16dp"
+            android:gravity="center" android:layout_marginBottom="16dp"/>
+        <Button android:id="@+id/btn_amazon_50"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="🛒 Amazon ₹50 Voucher — 5000 pts"
+            android:backgroundTint="#FF9900" android:layout_marginBottom="8dp"/>
+        <Button android:id="@+id/btn_flipkart_100"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="🛍️ Flipkart ₹100 Voucher — 8000 pts"
+            android:backgroundTint="#2874F0" android:layout_marginBottom="8dp"/>
+        <Button android:id="@+id/btn_myntra_50"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="👗 Myntra ₹50 Voucher — 5000 pts"
+            android:backgroundTint="#FF3F6C" android:layout_marginBottom="24dp"/>
+        <TextView android:id="@+id/tv_banner_title"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+        <ImageView android:id="@+id/img_hero_banner"
+            android:layout_width="match_parent" android:layout_height="150dp"
+            android:scaleType="centerCrop" android:background="#1a1a2e"/>
+    </LinearLayout>
+</ScrollView>

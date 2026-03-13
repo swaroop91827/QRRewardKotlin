@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="#1a1a2e"
+    android:padding="24dp" android:gravity="center">
+
+    <TextView android:text="🎴 Scratch Card!" android:textColor="#FFFFFF"
+        android:textSize="22sp" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <FrameLayout android:layout_width="200dp" android:layout_height="200dp">
+        <TextView android:id="@+id/tv_scratch_emoji"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:textSize="64sp" android:gravity="center" android:visibility="gone"/>
+        <TextView android:id="@+id/tv_scratch_message"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" android:textSize="18sp"
+            android:gravity="center" android:visibility="gone"
+            android:layout_gravity="bottom"/>
+        <View android:id="@+id/scratch_overlay"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="#6C63FF"/>
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+            android:text="👆 Scratch Here!" android:textColor="#FFFFFF"
+            android:textSize="18sp" android:gravity="center"
+            android:id="@+id/tv_scratch_hint"/>
+    </FrameLayout>
+
+    <TextView android:id="@+id/tv_qr_result"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="#666666" android:textSize="12sp"
+        android:layout_marginTop="16dp" android:maxLines="2"/>
+
+    <Button android:id="@+id/btn_claim"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Claim Points!" android:backgroundTint="#6C63FF"
+        android:layout_marginTop="12dp" android:visibility="gone"/>
+
+    <Button android:id="@+id/btn_share"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="📤 Share on WhatsApp = Double Points!"
+        android:backgroundTint="#25D366" android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+</LinearLayout>
